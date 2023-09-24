@@ -40,37 +40,32 @@ p{
 /* BARRA DE NAVEGACIÓN --------------------------------------------------------------------------------------------------------------------- */
 
 .navbar{
-    width: 100%;
-    position: sticky;
-    top: 0;
+    
+    display: flex;
+    flex-direction: row;
     font-family: 'Noto Sans';
     font-size: 30px;
     padding: 5px;
     background-color: rgb(34, 33, 33, 1);
     align-items: center;
-}
-
-.navbar div{
-    display: inline-block;
+    justify-content: space-between;
 }
 
 .navbar__logo{
     height: max-content;
     justify-items: center;
     align-items: center;
+    margin-left: 20px;
 }
 
 .logo{
     width: 25px;
 }
 
-.navbar ul{
-    padding-left: 20px;
-    overflow: hidden;
-}
-
-.navbar__navegacion li{
-    display: inline;
+.navbar__navegacion ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
 }
 
 .navbar__navegacion li:hover{
@@ -83,7 +78,26 @@ p{
     padding: 20px;
 }
 
+.offcanvas-header{
+    justify-content: right;
+    padding-top: 20px;
+}
+
+.navbar-nav li{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navbar-nav a:hover{
+    color: rgb(65, 105, 249);
+}
+
 /* SECCION - INICIO ----------------------------------------------------------------------------------------------------------------------- */
+
+section{
+    margin-top: 70px;
+}
 
 #sec-inicio{
     position: relative;
@@ -98,6 +112,7 @@ p{
     left: 0;
     height: 100vh;
     object-position: center;
+    object-fit: cover;
     z-index: -1;
 }
 
@@ -106,11 +121,9 @@ p{
     top: 0;
     left: 0;
     height: 100vh;
-    width: 40%;
     z-index: 1;
     color: white;
-    margin: auto;
-    padding: 100px;
+    margin: 10%;
 }
 
 #sec-inicio .contenido h4{
@@ -481,7 +494,7 @@ footer .grid-container p{
 }
 
 #derechos-reservados{
-    display: block;
+    display: flex;
     background-color:  rgb(20, 20, 20);
     justify-items: center;
 }

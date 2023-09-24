@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EARTH</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +18,54 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbar__logo">
-                <img src="./img/icono.png" alt=""  class="logo">
-                Earth
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <div class="navbar__logo">
+                    <img src="./img/icono.png" alt=""  class="logo">
+                    Earth
+                </div>
+                <div class="navbar__navegacion">
+                    <ul>
+                        <a href="index.html"><li>Inicio</li></a>
+                        <a href="./pages/ecosistemas.html"><li>Ecosistemas</li></a>
+                        <a href="./pages/oceanos.html"><li>Océanos</li></a>
+                        <a href="./pages/cambio-climatico.html"><li>Cambio climático</li></a>
+                        <a href="./pages/exploracion-espacial.html"><li>Exploración espacial</li></a>
+                        <a href="./pages/contactanos.html"><li>Contáctanos</li></a>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./pages/ecosistemas.html">Ecosistemas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/oceanos.html">Océanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/cambio-climatico.html">Cambio climático</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./pages/exploracion-espacial.html">Exploración espacial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/ecosistemas.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="navbar__navegacion">
-                <ul>
-                    <a href="index.html"><li>Inicio</li></a>
-                    <a href="./pages/ecosistemas.html"><li>Ecosistemas</li></a>
-                    <a href="./pages/oceanos.html"><li>Océanos</li></a>
-                    <a href="./pages/cambio-climatico.html"><li>Cambio climático</li></a>
-                    <a href="./pages/exploracion-espacial.html"><li>Exploración espacial</li></a>
-                    <a href="./pages/contactanos.html"><li>Contáctanos</li></a>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </header>
     <main>
         <section id="sec-inicio">
@@ -39,7 +74,7 @@
             </video>
             <div class="contenido">
                 <h1>El planeta
-                    <br>Tierra<br>
+                    <br>Tierra
                 </h1>
                 <h4>Conoce la belleza y la importancia de este globo terráqueo por el que existe la vida.</h4>
             </div>
