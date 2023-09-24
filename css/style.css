@@ -40,7 +40,6 @@ p{
 /* BARRA DE NAVEGACIÓN --------------------------------------------------------------------------------------------------------------------- */
 
 .navbar{
-    
     display: flex;
     flex-direction: row;
     font-family: 'Noto Sans';
@@ -93,6 +92,10 @@ p{
     color: rgb(65, 105, 249);
 }
 
+.navbar-toggler{
+    display: none;
+}
+
 /* SECCION - INICIO ----------------------------------------------------------------------------------------------------------------------- */
 
 section{
@@ -120,7 +123,9 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
     z-index: 1;
     color: white;
     margin: 10%;
@@ -504,3 +509,154 @@ footer .grid-container p{
     width: max-content;
     padding: 10px 0px;
 }
+
+@media (max-width:992px){
+    h1{
+        font-size: 50px;
+    }
+    
+    h4{
+        font-size: 20px;
+    }
+
+    .navbar{
+        height: 75px;
+    }
+    
+    .navbar__navegacion{
+        display: none;
+    }
+    
+    .navbar-toggler{
+        display:block;
+    }
+
+    #sec-inicio .contenido{
+        justify-content: center;
+        width: 90%;
+    }
+
+    #sec-ecosistemas .contenido{
+        width: 90%;
+    }
+
+    #sec-ecosistemas .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        padding-bottom: 60px;
+    }
+
+    #sec-oceanos .grid-container{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "atlantico imagen"
+        "pacifico imagen"
+        "indico imagen"
+        "artico imagen"
+        "antartico imagen";
+    }
+
+    #sec-oceanos .contenido{
+        width: 90%;
+    }
+
+    footer .grid-container h3{
+        font-size: 20px;
+    }
+
+    footer .grid-container{
+        grid-template-areas: 
+        "informacion informacion"
+        "propiedad social-media";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #informacion{
+        grid-area: informacion;
+    }
+
+    #propiedad{
+        grid-area: propiedad;
+    }
+
+    #social-media{
+        grid-area: social-media;
+    }
+}
+
+
+@media(max-width:480px){
+    section{
+        margin-top: 60px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .navbar{
+        height: 60px;
+    }
+
+    .navbar__logo{
+        margin: 0;
+    }
+
+    .navbar-nav li{
+        font-size: 22px;
+    }
+
+    #sec-inicio .contenido{
+        justify-content: center;
+        width: 90%;
+    }
+    
+    #sec-ecosistemas .contenido{
+        width: 90%;
+    }
+
+    #sec-ecosistemas .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 20px;
+        padding-bottom: 60px;
+    }
+
+    #sec-oceanos .contenido{
+        width: 90%;
+    }
+
+    #sec-oceanos .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px auto;
+        grid-template-areas: 
+        "imagen"
+        "atlantico"
+        "pacifico"
+        "indico"
+        "artico"
+        "antartico";
+    }
+
+    footer .grid-container h3{
+        font-size: 20px;
+    }
+
+    footer .grid-container{
+        padding: 30px 20px;
+        grid-template-areas: 
+        "informacion"
+        "propiedad"
+        "social-media";
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+    }
+}
+
