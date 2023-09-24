@@ -8,6 +8,7 @@
 h1{
     font-family: 'Montserrat', bold;
     font-size: 60px;
+    overflow-y: hidden;
 }
 
 h2{
