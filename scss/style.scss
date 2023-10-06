@@ -1,3 +1,10 @@
+/* VARIABLES */
+$color-primary-background: rgb(34, 33, 33, 1);
+$color-secundary-background: rgb(23, 23, 23);
+$color-terciary-background: rgb(71, 70, 70);
+
+/* PROYECTO */
+
 *{
     margin: 0;
     padding: 0;
@@ -46,7 +53,7 @@ p{
     font-family: 'Noto Sans';
     font-size: 30px;
     padding: 5px;
-    background-color: rgb(34, 33, 33, 1);
+    background-color: $color-primary-background;
     align-items: center;
     justify-content: space-between;
 }
@@ -137,7 +144,7 @@ section{
 
 #sec-ecosistemas{
     width: 100%;
-    background-color: rgb(23, 23, 23);
+    background-color: $color-secundary-background;
     .contenido{
         width: 80%;
         margin: auto;
@@ -196,7 +203,7 @@ section{
             }
         }
         .descripcion{
-            background-color: rgb(34, 33, 33, 1);
+            background-color: $color-primary-background;
             display: block;
             height: fit-content;
             padding: 15px;
@@ -211,7 +218,7 @@ section{
 
 #sec-oceanos{
     width: 100%;
-    background-color: rgb(23, 23, 23);
+    background-color: $color-secundary-background;
     .contenido{
         width: 80%;
         padding-top: 50px;
@@ -254,7 +261,7 @@ section{
                 background-position: center center;
             }
             .descripcion{
-                background-color: rgb(34, 33, 33, 1);
+                background-color: $color-primary-background;
                 padding: 15px;
                 p{
                     padding: 10px 0px 10px 0px;
@@ -272,7 +279,7 @@ section{
 
 #sec-cambio{
     width: 100%;
-    background-color: rgb(23, 23, 23);
+    background-color: $color-secundary-background;
     background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +351,7 @@ section{
                 "encabezado enlace2";
                 .subtitulo{
                     grid-area: encabezado;
-                    background-color: rgb(23, 23, 23);
+                    background-color: $color-secundary-background;
                     padding: 10px;
                     align-self: center;
                 }
@@ -359,7 +366,7 @@ section{
                 }
                 .subtitulo__direccion-2{
                     grid-area: enlace2;
-                    background-color: rgb(71, 70, 70);
+                    background-color: $color-terciary-background;
                     padding: 0px 10px;
                     width: fit-content;
                     display: flex;
@@ -442,7 +449,7 @@ section{
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------- */
 
 footer{
-    background-color: rgb(34, 33, 33, 1);
+    background-color: $color-primary-background;
     color: aliceblue;
     .grid-container{
         padding: 30px 50px;
