@@ -1,47 +1,7 @@
 @charset "UTF-8";
-/* VARIABLES */
-/* PROYECTO */
-* {
-  margin: 0;
-  padding: 0;
-  color: rgb(239, 239, 239);
-  overflow-x: hidden;
-}
-
-h1 {
-  font-family: "Montserrat", bold;
-  font-size: 60px;
-  overflow-y: hidden;
-}
-
-h2 {
-  font-family: "Montserrat", medium;
-  font-size: 40px;
-}
-
-h3 {
-  font-family: "Montserrat", light;
-  font-size: 30px;
-}
-
-h4 {
-  font-family: "Puritan";
-  font-size: 25px;
-}
-
-h5 {
-  font-family: "Puritan";
-}
-
-h6 {
-  font-family: "Noto Sans";
-}
-
-p {
-  font-family: "Noto Sans";
-}
-
-/* BARRA DE NAVEGACIÓN --------------------------------------------------------------------------------------------------------------------- */
+/* PALETA DE COLORES */
+/* TIPOGRAFIA */
+/* BARRA DE NAVEGACIÓN */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -96,6 +56,42 @@ p {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(239, 239, 239);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Montserrat", bold;
+  font-size: 60px;
+  overflow-y: hidden;
+}
+
+h2 {
+  font-family: "Montserrat", medium;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Montserrat", light;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: "Puritan";
+  font-size: 25px;
+}
+
+h5 {
+  font-family: "Puritan";
+}
+
+h6, p {
+  font-family: "Noto Sans";
+}
+
 /* SECCION - INICIO ----------------------------------------------------------------------------------------------------------------------- */
 section {
   margin-top: 70px;
@@ -131,7 +127,7 @@ section {
   padding: 15px 0px;
 }
 
-/* SECCION - ECOSISTEMAS ------------------------------------------------------------------------------------------------------------------ */
+/* SECCION - ECOSISTEMAS */
 #sec-ecosistemas {
   width: 100%;
   background-color: rgb(23, 23, 23);
@@ -204,7 +200,7 @@ section {
   padding: 10px 0px 10px 0px;
 }
 
-/* SECCION - OCEANOS ----------------------------------------------------------------------------------------------------------------------- */
+/* SECCION - OCEANOS */
 #sec-oceanos {
   width: 100%;
   background-color: rgb(23, 23, 23);
@@ -256,48 +252,7 @@ section {
   background-color: rgb(80, 133, 183);
 }
 
-/* CAMBIO CLIMATICO ------------------------------------------------------------------------------------------------------------------------*/
-#sec-cambio {
-  width: 100%;
-  background-color: rgb(23, 23, 23);
-  background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
-#sec-cambio .contenido {
-  width: 80%;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  margin: auto;
-  align-content: space-evenly;
-}
-#sec-cambio .contenido h1 {
-  background-color: rgb(34, 34, 34);
-  width: fit-content;
-  padding: 10px;
-}
-#sec-cambio .contenido .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 10px;
-  padding-top: 30%; /* CAMBIAR LUEGO */
-  overflow-y: hidden;
-}
-#sec-cambio .contenido .grid-container h3 {
-  background-color: rgb(34, 34, 34);
-  width: fit-content;
-  padding: 10px;
-}
-#sec-cambio .contenido .grid-container h3:hover {
-  background-color: rgb(80, 47, 3);
-  transform: scale(1.1);
-}
-
-/* EXPLORACION ESPACIAL ------------------------------------------------------------------------------------------------------------------ */
+/* EXPLORACION ESPACIAL */
 #sec-exploracion {
   width: 100%;
   height: 100vh;
@@ -355,7 +310,48 @@ section {
   justify-content: center;
 }
 
-/* CONTACTANOS ---------------------------------------------------------------------------------------------------------------------------- */
+/* CAMBIO CLIMATICO */
+#sec-cambio {
+  width: 100%;
+  background-color: rgb(23, 23, 23);
+  background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+#sec-cambio .contenido {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: auto;
+  align-content: space-evenly;
+}
+#sec-cambio .contenido h1 {
+  background-color: rgb(34, 34, 34);
+  width: fit-content;
+  padding: 10px;
+}
+#sec-cambio .contenido .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+  padding-top: 30%; /* CAMBIAR LUEGO */
+  overflow-y: hidden;
+}
+#sec-cambio .contenido .grid-container h3 {
+  background-color: rgb(34, 34, 34);
+  width: fit-content;
+  padding: 10px;
+}
+#sec-cambio .contenido .grid-container h3:hover {
+  background-color: rgb(80, 47, 3);
+  transform: scale(1.1);
+}
+
+/* CONTACTANOS */
 #sec-contacto {
   width: 100%;
   height: 100vh;
@@ -418,7 +414,7 @@ section {
   margin-top: 5px;
 }
 
-/* FOOTER --------------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
 footer {
   background-color: rgb(34, 33, 33);
   color: aliceblue;
@@ -445,13 +441,12 @@ footer .grid-container a {
   text-decoration: none;
   align-items: baseline;
 }
-
-#derechos-reservados {
+footer #derechos-reservados {
   display: flex;
   background-color: rgb(20, 20, 20);
   justify-items: center;
 }
-#derechos-reservados p {
+footer #derechos-reservados p {
   margin: auto;
   width: max-content;
   padding: 10px 0px;

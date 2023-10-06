@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:$color-primary-font;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: $title-font-1, bold;
+    font-size: $title-size-1;
+    overflow-y: hidden;
+}
+
+h2{
+    font-family: $title-font-1, medium;
+    font-size: 40px;
+}
+
+h3{
+    font-family: $title-font-1, light;
+    font-size: 30px;
+}
+
+h4{
+    font-family: $title-font-2;
+    font-size: $title-size-2;
+}
+
+h5{
+    font-family: $title-font-2;
+}
+
+h6, p{
+    font-family: $paragraph-font;
+}
+
+
+/* SECCION - INICIO ----------------------------------------------------------------------------------------------------------------------- */
+
+section{
+    margin-top: 70px;
+}
+
+#sec-inicio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .video-de-fondo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        object-position: center;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .contenido{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        z-index: 1;
+        color: white;
+        margin: 10%;
+        h4{
+            padding: 15px 0px;
+        }
+    }
+}

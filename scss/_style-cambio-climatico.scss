@@ -1,0 +1,41 @@
+/* CAMBIO CLIMATICO */
+
+#sec-cambio{
+    width: 100%;
+    background-color: $color-secundary-background;
+    background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    .contenido{
+        width: 80%;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        margin: auto; 
+        align-content: space-evenly;
+        h1{
+            background-color:rgb(34, 34, 34);
+            width: fit-content;
+            padding: 10px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+            gap: 10px;
+            padding-top: 30%;   /* CAMBIAR LUEGO */
+            overflow-y: hidden;
+            h3{
+                background-color: rgb(34, 34, 34);
+                width: fit-content;
+                padding: 10px;
+                &:hover{
+                    background-color: rgb(80, 47, 3);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

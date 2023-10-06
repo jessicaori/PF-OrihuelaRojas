@@ -1,0 +1,59 @@
+/* BARRA DE NAVEGACIÓN */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+    padding: 5px;
+    background-color: $color-primary-background;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo{
+    height: max-content;
+    justify-items: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo{
+    width: 25px;
+}
+
+.navbar__navegacion{
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    li:hover{
+        color: rgb(65, 105, 249);
+    }
+    a{
+        font-size: 18px;
+        text-decoration: none;
+        padding: 20px;
+    }
+}
+
+.offcanvas-header{
+    justify-content: right;
+    padding-top: 20px;
+}
+
+.navbar-nav{
+    li{
+        font-size: 18px;
+        text-decoration: none;
+        padding: 20px;
+    }
+    a:hover{
+        color: rgb(65, 105, 249);
+    }
+}
+
+.navbar-toggler{
+    display: none;
+}

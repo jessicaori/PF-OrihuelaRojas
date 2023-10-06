@@ -1,0 +1,73 @@
+/* SECCION - ECOSISTEMAS */
+
+#sec-ecosistemas{
+    width: 100%;
+    background-color: $color-secundary-background;
+    .contenido{
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+        .grid-container{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 20px;
+            padding-bottom: 60px;
+        }
+        .carta{
+            display: flex;
+            flex-direction: column;
+        }
+        .imagen-ecosistema-1{
+            height: 200px;
+            background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
+            background-color: yellowgreen;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            &:hover{
+                background-size: 105%;
+            }
+        }
+        .imagen-ecosistema-2{
+            height: 200px;
+            background-image: url(../img/Ecosistemas/Desierto.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            &:hover{
+                background-size: 120%;
+            }
+        }
+        .imagen-ecosistema-3{
+            height: 200px;
+            background-image: url(../img/Ecosistemas/Tundra.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            &:hover{
+                background-size: 110%;
+            }
+        }
+        .imagen-ecosistema-4{
+            height: 200px;
+            background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            &:hover{
+                background-size: 110%;
+            }
+        }
+        .descripcion{
+            background-color: $color-primary-background;
+            display: block;
+            height: fit-content;
+            padding: 15px;
+            p{
+                padding: 10px 0px 10px 0px;
+            }
+        }
+    }
+}
