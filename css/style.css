@@ -1,665 +1,566 @@
-*{
-    margin: 0;
-    padding: 0;
-    color:rgb(239, 239, 239);
-    overflow-x: hidden;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(239, 239, 239);
+  overflow-x: hidden;
 }
 
-h1{
-    font-family: 'Montserrat', bold;
-    font-size: 60px;
-    overflow-y: hidden;
+h1 {
+  font-family: "Montserrat", bold;
+  font-size: 60px;
+  overflow-y: hidden;
 }
 
-h2{
-    font-family: 'Montserrat', medium;
-    font-size: 40px;
+h2 {
+  font-family: "Montserrat", medium;
+  font-size: 40px;
 }
 
-h3{
-    font-family: 'Montserrat', light;
-    font-size: 30px;
+h3 {
+  font-family: "Montserrat", light;
+  font-size: 30px;
 }
 
-h4{
-    font-family: 'Puritan';
-    font-size: 25px;
+h4 {
+  font-family: "Puritan";
+  font-size: 25px;
 }
 
-h5{
-    font-family: 'Puritan';
+h5 {
+  font-family: "Puritan";
 }
 
-h6{
-    font-family: 'Noto Sans';
+h6 {
+  font-family: "Noto Sans";
 }
 
-p{
-    font-family: 'Noto Sans';
+p {
+  font-family: "Noto Sans";
 }
 
 /* BARRA DE NAVEGACIÓN --------------------------------------------------------------------------------------------------------------------- */
-
-.navbar{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Noto Sans';
-    font-size: 30px;
-    padding: 5px;
-    background-color: rgb(34, 33, 33, 1);
-    align-items: center;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  font-family: "Noto Sans";
+  font-size: 30px;
+  padding: 5px;
+  background-color: rgb(34, 33, 33);
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar__logo{
-    height: max-content;
-    justify-items: center;
-    align-items: center;
-    margin-left: 20px;
+.navbar__logo {
+  height: max-content;
+  justify-items: center;
+  align-items: center;
+  margin-left: 20px;
 }
 
-.logo{
-    width: 25px;
+.logo {
+  width: 25px;
 }
 
-.navbar__navegacion ul{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0;
+.navbar__navegacion ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.navbar__navegacion li:hover {
+  color: rgb(65, 105, 249);
+}
+.navbar__navegacion a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
 }
 
-.navbar__navegacion li:hover{
-    color: rgb(65, 105, 249);
+.offcanvas-header {
+  justify-content: right;
+  padding-top: 20px;
 }
 
-.navbar__navegacion a{
-    font-size: 18px;
-    text-decoration: none;
-    padding: 20px;
+.navbar-nav li {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
+}
+.navbar-nav a:hover {
+  color: rgb(65, 105, 249);
 }
 
-.offcanvas-header{
-    justify-content: right;
-    padding-top: 20px;
-}
-
-.navbar-nav li{
-    font-size: 18px;
-    text-decoration: none;
-    padding: 20px;
-}
-
-.navbar-nav a:hover{
-    color: rgb(65, 105, 249);
-}
-
-.navbar-toggler{
-    display: none;
+.navbar-toggler {
+  display: none;
 }
 
 /* SECCION - INICIO ----------------------------------------------------------------------------------------------------------------------- */
-
-section{
-    margin-top: 70px;
+section {
+  margin-top: 70px;
 }
 
-#sec-inicio{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+#sec-inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-
-.video-de-fondo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    object-position: center;
-    object-fit: cover;
-    z-index: -1;
+#sec-inicio .video-de-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
+  z-index: -1;
 }
-
-#sec-inicio .contenido{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    z-index: 1;
-    color: white;
-    margin: 10%;
+#sec-inicio .contenido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  z-index: 1;
+  color: white;
+  margin: 10%;
 }
-
-#sec-inicio .contenido h4{
-    padding: 15px 0px;
+#sec-inicio .contenido h4 {
+  padding: 15px 0px;
 }
 
 /* SECCION - ECOSISTEMAS ------------------------------------------------------------------------------------------------------------------ */
-
-#sec-ecosistemas{
-    width: 100%;
-    background-color: rgb(23, 23, 23);
+#sec-ecosistemas {
+  width: 100%;
+  background-color: rgb(23, 23, 23);
 }
-
-#sec-ecosistemas .contenido{
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
+#sec-ecosistemas .contenido {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
 }
-
-#sec-ecosistemas .grid-container{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 20px;
-    padding-bottom: 60px;
+#sec-ecosistemas .contenido .grid-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+  padding-bottom: 60px;
 }
-
-#sec-ecosistemas .carta{
-    display: flex;
-    flex-direction: column;
+#sec-ecosistemas .contenido .carta {
+  display: flex;
+  flex-direction: column;
 }
-
-#sec-ecosistemas .imagen-ecosistema-1:hover{
-    background-size: 105%;
+#sec-ecosistemas .contenido .imagen-ecosistema-1 {
+  height: 200px;
+  background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
+  background-color: yellowgreen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-#sec-ecosistemas .imagen-ecosistema-2:hover{
-    background-size: 110%;
+#sec-ecosistemas .contenido .imagen-ecosistema-1:hover {
+  background-size: 105%;
 }
-
-#sec-ecosistemas .imagen-ecosistema-3:hover{
-    background-size: 105%;
+#sec-ecosistemas .contenido .imagen-ecosistema-2 {
+  height: 200px;
+  background-image: url(../img/Ecosistemas/Desierto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-#sec-ecosistemas .imagen-ecosistema-4:hover{
-    background-size: 105%;
+#sec-ecosistemas .contenido .imagen-ecosistema-2:hover {
+  background-size: 120%;
 }
-
-.imagen-ecosistema-1{
-    height: 200px;
-    background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
-    background-color: yellowgreen;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#sec-ecosistemas .contenido .imagen-ecosistema-3 {
+  height: 200px;
+  background-image: url(../img/Ecosistemas/Tundra.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-.imagen-ecosistema-2{
-    height: 200px;
-    background-image: url(../img/Ecosistemas/Desierto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#sec-ecosistemas .contenido .imagen-ecosistema-3:hover {
+  background-size: 110%;
 }
-
-.imagen-ecosistema-3{
-    height: 200px;
-    background-image: url(../img/Ecosistemas/Tundra.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#sec-ecosistemas .contenido .imagen-ecosistema-4 {
+  height: 200px;
+  background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-.imagen-ecosistema-4{
-    height: 200px;
-    background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#sec-ecosistemas .contenido .imagen-ecosistema-4:hover {
+  background-size: 110%;
 }
-
-#sec-ecosistemas .descripcion{
-    background-color: rgb(34, 33, 33, 1);
-    display: block;
-    height: fit-content;
-    padding: 15px;
+#sec-ecosistemas .contenido .descripcion {
+  background-color: rgb(34, 33, 33);
+  display: block;
+  height: fit-content;
+  padding: 15px;
 }
-
-#sec-ecosistemas .descripcion p{
-    padding: 10px 0px 10px 0px;
+#sec-ecosistemas .contenido .descripcion p {
+  padding: 10px 0px 10px 0px;
 }
 
 /* SECCION - OCEANOS ----------------------------------------------------------------------------------------------------------------------- */
-
-#sec-oceanos{
-    width: 100%;
-    background-color: rgb(23, 23, 23);
+#sec-oceanos {
+  width: 100%;
+  background-color: rgb(23, 23, 23);
 }
-
-#sec-oceanos .contenido{
-    width: 80%;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    margin: auto;
+#sec-oceanos .contenido {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: auto;
 }
-
-#sec-oceanos .grid-container{
-    padding-top: 25px;
-    display: grid;
-    grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 1fr 1fr 0.6fr;
-    grid-template-areas: 
-    "atlantico pacifico imagen"
-    "indico artico imagen"
-    "antartico antartico imagen";
-    gap: 10px;
+#sec-oceanos .contenido .grid-container {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 1fr 1fr 0.6fr;
+  grid-template-areas: "atlantico pacifico imagen" "indico artico imagen" "antartico antartico imagen";
+  gap: 10px;
 }
-
-#atlantico{
-    grid-area: atlantico;
+#sec-oceanos .contenido .grid-container #atlantico {
+  grid-area: atlantico;
 }
-
-#pacifico{
-    grid-area: pacifico;
+#sec-oceanos .contenido .grid-container #pacifico {
+  grid-area: pacifico;
 }
-
-#indico{
-    grid-area: indico;
+#sec-oceanos .contenido .grid-container #indico {
+  grid-area: indico;
 }
-
-#artico{
-    grid-area: artico;
+#sec-oceanos .contenido .grid-container #artico {
+  grid-area: artico;
 }
-
-#antartico{
-    grid-area: antartico;
+#sec-oceanos .contenido .grid-container #antartico {
+  grid-area: antartico;
 }
-
-#imagen-oceanos{
-    grid-area: imagen;
-    background-image: url(../img/Oceanos/oceanos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#sec-oceanos .contenido .grid-container #imagen-oceanos {
+  grid-area: imagen;
+  background-image: url(../img/Oceanos/oceanos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-#sec-oceanos .descripcion{
-    background-color: rgb(34, 33, 33, 1);
-    padding: 15px;
+#sec-oceanos .contenido .grid-container .descripcion {
+  background-color: rgb(34, 33, 33);
+  padding: 15px;
 }
-
-#sec-oceanos .descripcion:hover{
-    background-color: rgb(80, 133, 183);
+#sec-oceanos .contenido .grid-container .descripcion p {
+  padding: 10px 0px 10px 0px;
 }
-
-#sec-oceanos .descripcion p{
-    padding: 10px 0px 10px 0px;
+#sec-oceanos .contenido .grid-container .descripcion:hover {
+  background-color: rgb(80, 133, 183);
 }
 
 /* CAMBIO CLIMATICO ------------------------------------------------------------------------------------------------------------------------*/
-
-#sec-cambio{
-    width: 100%;
-    background-color: rgb(23, 23, 23);
-    background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
+#sec-cambio {
+  width: 100%;
+  background-color: rgb(23, 23, 23);
+  background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
 }
-
-#sec-cambio .contenido{
-    width: 80%;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    margin: auto; 
-    align-content: space-evenly;
+#sec-cambio .contenido {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: auto;
+  align-content: space-evenly;
 }
-
-#sec-cambio h1{
-    background-color:rgb(34, 34, 34);
-    width: fit-content;
-    padding: 10px;
+#sec-cambio .contenido h1 {
+  background-color: rgb(34, 34, 34);
+  width: fit-content;
+  padding: 10px;
 }
-
-#sec-cambio .grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 10px;
-    padding-top: 30%;   /* CAMBIAR LUEGO */
-    overflow-y: hidden;
+#sec-cambio .contenido .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+  padding-top: 30%; /* CAMBIAR LUEGO */
+  overflow-y: hidden;
 }
-
-#sec-cambio .grid-container h3{
-    background-color: rgb(34, 34, 34);
-    width: fit-content;
-    padding: 10px;
+#sec-cambio .contenido .grid-container h3 {
+  background-color: rgb(34, 34, 34);
+  width: fit-content;
+  padding: 10px;
 }
-
-#sec-cambio .grid-container h3:hover{
-    background-color: rgb(80, 47, 3);
-    transform: scale(1.1);
+#sec-cambio .contenido .grid-container h3:hover {
+  background-color: rgb(80, 47, 3);
+  transform: scale(1.1);
 }
 
 /* EXPLORACION ESPACIAL ------------------------------------------------------------------------------------------------------------------ */
-
-#sec-exploracion{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+#sec-exploracion {
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
-
-#sec-exploracion .contenido{
-    position: absolute;
-    width: 80%;
-    padding-left: 150px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    margin: auto; 
-    z-index: 1;
+#sec-exploracion .video-de-fondo {
+  position: absolute;
+  object-position: center;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
 }
-
-#sec-exploracion .video-de-fondo{
-    position: fixed;
+#sec-exploracion .contenido {
+  position: absolute;
+  width: 80%;
+  padding-left: 150px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: auto;
+  z-index: 1;
 }
-
-#sec-exploracion .flex-container{
-    display: flex;
-    flex-direction: column;
+#sec-exploracion .contenido .flex-container {
+  display: flex;
+  flex-direction: column;
 }
-
-#sec-exploracion .grid-container{
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "encabezado enlace1"
-    "encabezado enlace2";
+#sec-exploracion .contenido .flex-container .grid-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "encabezado enlace1" "encabezado enlace2";
 }
-
-#sec-exploracion .subtitulo{
-    grid-area: encabezado;
-    background-color: rgb(23, 23, 23);
-    padding: 10px;
-    align-self: center;
+#sec-exploracion .contenido .flex-container .grid-container .subtitulo {
+  grid-area: encabezado;
+  background-color: rgb(23, 23, 23);
+  padding: 10px;
+  align-self: center;
 }
-
-#sec-exploracion .subtitulo__direccion-1{
-    grid-area: enlace1;
-    background-color: rgb(46, 46, 46);
-    padding: 0px 10px;
-    width: fit-content;
+#sec-exploracion .contenido .flex-container .grid-container .subtitulo__direccion-1 {
+  grid-area: enlace1;
+  background-color: rgb(46, 46, 46);
+  padding: 0px 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#sec-exploracion .subtitulo__direccion-2{
-    grid-area: enlace2;
-    background-color: rgb(71, 70, 70);
-    padding: 0px 10px;
-    width: fit-content;
+#sec-exploracion .contenido .flex-container .grid-container .subtitulo__direccion-2 {
+  grid-area: enlace2;
+  background-color: rgb(71, 70, 70);
+  padding: 0px 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CONTACTANOS ---------------------------------------------------------------------------------------------------------------------------- */
-
-#sec-contacto{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+#sec-contacto {
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
-
-#sec-contacto .contenido{
-    width: 80%;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 150px;
-    margin: auto; 
-    position: absolute;
-    z-index: 1;
+#sec-contacto .video-de-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
 }
-
-#sec-contacto form{
-    font-family: 'Noto Sans';
-    font-size: 17px;
-    display: grid;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "nom ape"
-    "email tel"
-    "texto submit";
-    gap: 10px;
-    margin-top: 15px;
-    padding-top: 15px;
-    align-items: end;
+#sec-contacto .contenido {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
 }
-
-.nom{
-    grid-area: nom;
+#sec-contacto .contenido form {
+  font-family: "Noto Sans";
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "nom ape" "email tel" "texto submit";
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  align-items: end;
 }
-
-.ape{
-    grid-area: ape;
+#sec-contacto .contenido form .nom {
+  grid-area: nom;
 }
-
-.email{
-    grid-area: email;
+#sec-contacto .contenido form .ape {
+  grid-area: ape;
 }
-
-.tel{
-    grid-area: tel;
+#sec-contacto .contenido form .email {
+  grid-area: email;
 }
-
-.texto{
-    grid-area: texto;
+#sec-contacto .contenido form .tel {
+  grid-area: tel;
 }
-
-.submit{
-    grid-area: submit;
-    height: fit-content;
-    width: fit-content;
-    padding: 5px 10px;
-    margin-top: 5px;
+#sec-contacto .contenido form .texto {
+  grid-area: texto;
 }
-
-form input{
-    color: black;
-    padding: 5px 10px;
-    margin-top: 5px;
-    
+#sec-contacto .contenido form .submit {
+  grid-area: submit;
+  height: fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+#sec-contacto .contenido form input {
+  color: black;
+  padding: 5px 10px;
+  margin-top: 5px;
 }
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------- */
-
-footer{
-    background-color: rgb(34, 33, 33, 1);
-    color: aliceblue;
+footer {
+  background-color: rgb(34, 33, 33);
+  color: aliceblue;
+}
+footer .grid-container {
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 1fr;
+  column-gap: 5px;
+}
+footer .grid-container h3 {
+  font-size: 25px;
+}
+footer .grid-container p {
+  padding-left: 5px;
+}
+footer .grid-container img {
+  height: 15px;
+}
+footer .grid-container a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: baseline;
 }
 
-footer .grid-container{
-    padding: 30px 50px;
-    display: grid;
-    grid-template-columns: 60% 20% 20%;
-    grid-template-rows: 1fr;
-    column-gap: 5px;
+#derechos-reservados {
+  display: flex;
+  background-color: rgb(20, 20, 20);
+  justify-items: center;
+}
+#derechos-reservados p {
+  margin: auto;
+  width: max-content;
+  padding: 10px 0px;
 }
 
-
-footer .grid-container h3{
-    font-size: 25px;
+@media (max-width: 1080px) {
+  .navbar {
+    height: 75px;
+  }
+  .navbar__navegacion {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  #sec-inicio .contenido {
+    justify-content: center;
+    width: 90%;
+  }
+  #sec-ecosistemas .contenido {
+    width: 90%;
+  }
+  #sec-ecosistemas .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 60px;
+  }
+  #sec-oceanos .grid-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "atlantico imagen" "pacifico imagen" "indico imagen" "artico imagen" "antartico imagen";
+  }
+  #sec-oceanos .contenido {
+    width: 90%;
+  }
+  footer .grid-container h3 {
+    font-size: 20px;
+  }
+  footer .grid-container {
+    grid-template-areas: "informacion informacion" "propiedad social-media";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #informacion {
+    grid-area: informacion;
+  }
+  #propiedad {
+    grid-area: propiedad;
+  }
+  #social-media {
+    grid-area: social-media;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    margin-top: 60px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .navbar {
+    height: 60px;
+  }
+  .navbar__logo {
+    margin: 0;
+  }
+  .navbar-nav li {
+    font-size: 22px;
+  }
+  #sec-inicio .contenido {
+    justify-content: center;
+    width: 90%;
+  }
+  #sec-ecosistemas .contenido {
+    width: 90%;
+  }
+  #sec-ecosistemas .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    padding-bottom: 60px;
+  }
+  #sec-oceanos .contenido {
+    width: 90%;
+  }
+  #sec-oceanos .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto;
+    grid-template-areas: "imagen" "atlantico" "pacifico" "indico" "artico" "antartico";
+  }
+  footer .grid-container h3 {
+    font-size: 20px;
+  }
+  footer .grid-container {
+    padding: 30px 20px;
+    grid-template-areas: "informacion" "propiedad" "social-media";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
 
-footer .grid-container img{
-    height: 15px;
-}
-
-footer .grid-container a{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    align-items: baseline;
-}
-
-footer .grid-container p{
-    padding-left: 5px;
-}
-
-#derechos-reservados{
-    display: flex;
-    background-color:  rgb(20, 20, 20);
-    justify-items: center;
-}
-
-#derechos-reservados p{
-    margin: auto;
-    width: max-content;
-    padding: 10px 0px;
-}
-
-@media(max-width:1080px){
-    .navbar{
-        height: 75px;
-    }
-    
-    .navbar__navegacion{
-        display: none;
-    }
-    
-    .navbar-toggler{
-        display:block;
-    }
-}
-
-@media (max-width:992px){
-    h1{
-        font-size: 50px;
-    }
-    
-    h4{
-        font-size: 20px;
-    }
-
-    #sec-inicio .contenido{
-        justify-content: center;
-        width: 90%;
-    }
-
-    #sec-ecosistemas .contenido{
-        width: 90%;
-    }
-
-    #sec-ecosistemas .grid-container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;
-        column-gap: 20px;
-        padding-bottom: 60px;
-    }
-
-    #sec-oceanos .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5,1fr);
-        grid-template-areas: 
-        "atlantico imagen"
-        "pacifico imagen"
-        "indico imagen"
-        "artico imagen"
-        "antartico imagen";
-    }
-
-    #sec-oceanos .contenido{
-        width: 90%;
-    }
-
-    footer .grid-container h3{
-        font-size: 20px;
-    }
-
-    footer .grid-container{
-        grid-template-areas: 
-        "informacion informacion"
-        "propiedad social-media";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    #informacion{
-        grid-area: informacion;
-    }
-
-    #propiedad{
-        grid-area: propiedad;
-    }
-
-    #social-media{
-        grid-area: social-media;
-    }
-}
-
-
-@media(max-width:480px){
-    section{
-        margin-top: 60px;
-    }
-
-    h1{
-        font-size: 40px;
-    }
-
-    h4{
-        font-size: 20px;
-    }
-
-    .navbar{
-        height: 60px;
-    }
-
-    .navbar__logo{
-        margin: 0;
-    }
-
-    .navbar-nav li{
-        font-size: 22px;
-    }
-
-    #sec-inicio .contenido{
-        justify-content: center;
-        width: 90%;
-    }
-    
-    #sec-ecosistemas .contenido{
-        width: 90%;
-    }
-
-    #sec-ecosistemas .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        column-gap: 20px;
-        padding-bottom: 60px;
-    }
-
-    #sec-oceanos .contenido{
-        width: 90%;
-    }
-
-    #sec-oceanos .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px auto;
-        grid-template-areas: 
-        "imagen"
-        "atlantico"
-        "pacifico"
-        "indico"
-        "artico"
-        "antartico";
-    }
-
-    footer .grid-container h3{
-        font-size: 20px;
-    }
-
-    footer .grid-container{
-        padding: 30px 20px;
-        grid-template-areas: 
-        "informacion"
-        "propiedad"
-        "social-media";
-        grid-template-columns: 1fr ;
-        grid-template-rows: auto;
-    }
-}
-
+/*# sourceMappingURL=style.css.map */
