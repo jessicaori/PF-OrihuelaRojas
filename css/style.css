@@ -341,6 +341,7 @@ section {
   background-color: rgb(23, 23, 23);
   padding: 10px;
   align-self: center;
+  margin-bottom: 0px;
 }
 #sec-exploracion .contenido .flex-container .grid-container .subtitulo__direccion-1 {
   grid-area: enlace1;
@@ -350,6 +351,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0px;
 }
 #sec-exploracion .contenido .flex-container .grid-container .subtitulo__direccion-2 {
   grid-area: enlace2;
@@ -359,6 +361,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0px;
 }
 
 /* CAMBIO CLIMATICO */
