@@ -1,23 +1,14 @@
 /* CONTACTANOS */
 
 #sec-contacto{
-    width: 100%;
-    height: 100vh;
+    @include section-width-height-100;
     position: relative;
     .video-de-fondo{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        object-position: center;
-        object-fit: cover;
+        @include video-de-fondo-style;
     }
     .contenido{
-        width: 80%;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        @include contenido-width80-padding-align;
         padding-left: 150px;
-        margin: auto; 
         position: absolute;
         z-index: 1;
         form{

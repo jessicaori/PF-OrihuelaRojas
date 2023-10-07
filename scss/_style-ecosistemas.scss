@@ -4,9 +4,7 @@
     width: 100%;
     background-color: $color-secundary-background;
     .contenido{
-        width: 80%;
-        margin: auto;
-        padding-top: 50px;
+        @include contenido-width80-padding-align;
         .grid-container{
             margin-top: 30px;
             display: grid;

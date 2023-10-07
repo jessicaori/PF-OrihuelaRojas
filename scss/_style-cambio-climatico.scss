@@ -1,18 +1,14 @@
 /* CAMBIO CLIMATICO */
 
 #sec-cambio{
-    width: 100%;
+    @include section-width-height-100;
     background-color: $color-secundary-background;
     background-image: url(../img/Cambio-climatico/cambio-climatico.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
     .contenido{
-        width: 80%;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        margin: auto; 
+        @include contenido-width80-padding-align;
         align-content: space-evenly;
         h1{
             background-color:rgb(34, 34, 34);
