@@ -20,44 +20,36 @@
             flex-direction: column;
         }
         .imagen-ecosistema-1{
-            height: 200px;
             background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
             background-color: yellowgreen;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
             &:hover{
                 background-size: 105%;
             }
         }
         .imagen-ecosistema-2{
-            height: 200px;
             background-image: url(../img/Ecosistemas/Desierto.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
             &:hover{
                 background-size: 120%;
             }
         }
         .imagen-ecosistema-3{
-            height: 200px;
             background-image: url(../img/Ecosistemas/Tundra.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
             &:hover{
                 background-size: 110%;
             }
         }
         .imagen-ecosistema-4{
-            height: 200px;
             background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
             &:hover{
                 background-size: 110%;
+            }
+        }
+        @for $i from 1 through 4{
+            .imagen-ecosistema-#{$i}{
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
             }
         }
         .descripcion{

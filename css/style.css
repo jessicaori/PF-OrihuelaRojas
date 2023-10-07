@@ -150,45 +150,53 @@ section {
   flex-direction: column;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-1 {
-  height: 200px;
   background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
   background-color: yellowgreen;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-1:hover {
   background-size: 105%;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-2 {
-  height: 200px;
   background-image: url(../img/Ecosistemas/Desierto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-2:hover {
   background-size: 120%;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-3 {
-  height: 200px;
   background-image: url(../img/Ecosistemas/Tundra.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-3:hover {
   background-size: 110%;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-4 {
-  height: 200px;
   background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-4:hover {
+  background-size: 110%;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-1 {
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-#sec-ecosistemas .contenido .imagen-ecosistema-4:hover {
-  background-size: 110%;
+#sec-ecosistemas .contenido .imagen-ecosistema-2 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-3 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-4 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 #sec-ecosistemas .contenido .descripcion {
   background-color: rgb(34, 33, 33);
