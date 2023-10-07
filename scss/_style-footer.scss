@@ -24,6 +24,11 @@ footer{
             text-decoration: none;
             align-items: baseline;
         }
+        @each $redsocial, $color in $redes {
+            #i-#{$redsocial}:hover{
+                color: $color;
+            }
+        }
     }
     #derechos-reservados{
         display: flex;

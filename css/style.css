@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* PALETA DE COLORES */
 /* TIPOGRAFIA */
+/* MAPS */
 /* BARRA DE NAVEGACIÓN */
 .navbar {
   display: flex;
@@ -448,6 +449,15 @@ footer .grid-container a {
   flex-direction: row;
   text-decoration: none;
   align-items: baseline;
+}
+footer .grid-container #i-facebook:hover {
+  color: #3662c1;
+}
+footer .grid-container #i-instagram:hover {
+  color: #f17b44;
+}
+footer .grid-container #i-linkedin:hover {
+  color: cyan;
 }
 footer #derechos-reservados {
   display: flex;
