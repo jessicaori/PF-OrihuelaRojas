@@ -2,6 +2,7 @@
 /* PALETA DE COLORES */
 /* TIPOGRAFIA */
 /* MAPS */
+/* CONTADOR*/
 /* BARRA DE NAVEGACIÓN */
 .navbar {
   display: flex;
@@ -389,7 +390,7 @@ section {
   display: grid;
   grid-template-columns: 30% 30%;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "nom ape" "email tel" "texto submit";
+  grid-template-areas: "nom ape" "email tel" "texto boton";
   gap: 10px;
   margin-top: 15px;
   padding-top: 15px;
@@ -410,12 +411,28 @@ section {
 #sec-contacto .contenido form .texto {
   grid-area: texto;
 }
-#sec-contacto .contenido form .submit {
-  grid-area: submit;
+#sec-contacto .contenido form .boton {
+  grid-area: boton;
   height: fit-content;
-  width: fit-content;
   padding: 5px 10px;
-  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#sec-contacto .contenido form .boton .boton-volver, #sec-contacto .contenido form .boton .boton-enviar {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 20px;
+}
+#sec-contacto .contenido form .boton .boton-volver:hover, #sec-contacto .contenido form .boton .boton-enviar:hover {
+  background-color: white;
+  color: rgb(23, 23, 23);
+}
+#sec-contacto .contenido form .boton .boton-enviar {
+  background-color: rgb(40, 126, 40);
+}
+#sec-contacto .contenido form a {
+  text-decoration: none;
 }
 #sec-contacto .contenido form input {
   color: black;

@@ -29,7 +29,7 @@
             grid-template-areas: 
             "nom ape"
             "email tel"
-            "texto submit";
+            "texto boton";
             gap: 10px;
             margin-top: 15px;
             padding-top: 15px;
@@ -49,18 +49,34 @@
             .texto{
                 grid-area: texto;
             }
-            .submit{
-                grid-area: submit;
+            .boton{
+                grid-area: boton;
                 height: fit-content;
-                width: fit-content;
                 padding: 5px 10px;
-                margin-top: 5px;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                .boton-volver{
+                    border: 1px solid white;
+                    border-radius: 25px;
+                    padding: 5px 20px;
+                    &:hover{
+                        background-color: white;
+                        color: $color-secundary-background;
+                    }
+                }
+                .boton-enviar{
+                    @extend .boton-volver;
+                    background-color: rgb(40, 126, 40);
+                }
+            }
+            a{
+                text-decoration: none;
             }
             input{
                 color: black;
                 padding: 5px 10px;
                 margin-top: 5px;
-                
             }
         }
     }    

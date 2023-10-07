@@ -25,6 +25,7 @@ footer{
             align-items: baseline;
         }
         @each $redsocial, $color in $redes {
+            $i: $i + 1;
             #i-#{$redsocial}:hover{
                 color: $color;
             }
