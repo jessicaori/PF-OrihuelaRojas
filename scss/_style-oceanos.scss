@@ -15,24 +15,37 @@
             "indico artico imagen"
             "antartico antartico imagen";
             gap: 10px;
+            overflow-y: hidden;
             #atlantico{
                 grid-area: atlantico;
+                &:hover{
+                    @include efecto-nota(-2deg);
+                }
             }
-            
             #pacifico{
                 grid-area: pacifico;
+                &:hover{
+                    @include efecto-nota(2deg);
+                }
             }
-            
             #indico{
                 grid-area: indico;
+                &:hover{
+                    @include efecto-nota(-2deg);
+                }
             }
-            
             #artico{
                 grid-area: artico;
+                &:hover{
+                    @include efecto-nota(2deg);
+                }
             }
-            
             #antartico{
                 grid-area: antartico;
+                overflow-y: hidden;
+                &:hover{
+                    @include efecto-nota(-0.5deg);
+                }
             }
             #imagen-oceanos{
                 grid-area: imagen;
@@ -46,9 +59,6 @@
                 padding: 15px;
                 p{
                     padding: 10px 0px 10px 0px;
-                }
-                &:hover{
-                    background-color: rgb(80, 133, 183);
                 }
             }
         }

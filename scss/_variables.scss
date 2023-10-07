@@ -39,3 +39,9 @@ $redes: (
     object-fit: cover;
     z-index: -1;
 }
+
+@mixin efecto-nota($grados){
+    transform: rotate($grados);
+    background-image: linear-gradient(to top,  rgba(0, 255, 187, 0.895), rgb(80, 133, 183), rgb(24, 64, 145));
+    transition: transform 0.5s;
+}

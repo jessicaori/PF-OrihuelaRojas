@@ -52,13 +52,15 @@
                     border-radius: 25px;
                     padding: 5px 20px;
                     &:hover{
-                        background-color: white;
-                        color: $color-secundary-background;
+                        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(24, 64, 145));
                     }
                 }
                 .boton-enviar{
                     @extend .boton-volver;
                     background-color: rgb(40, 126, 40);
+                    &:hover{
+                        background-image: linear-gradient(to right, rgb(40, 126, 40), rgb(24, 64, 145));
+                    }
                 }
             }
             a{
@@ -68,6 +70,11 @@
                 color: black;
                 padding: 5px 10px;
                 margin-top: 5px;
+                border-radius: 25px;
+                transition: background-color 0.5s;
+                &:focus{
+                    background-color: rgb(169, 242, 202);
+                }
             }
         }
     }    

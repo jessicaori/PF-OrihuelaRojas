@@ -17,37 +17,45 @@
             display: flex;
             flex-direction: column;
         }
-        .imagen-ecosistema-1{
-            background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
-            background-color: yellowgreen;
-            &:hover{
-                background-size: 105%;
-            }
-        }
-        .imagen-ecosistema-2{
-            background-image: url(../img/Ecosistemas/Desierto.jpg);
-            &:hover{
-                background-size: 120%;
-            }
-        }
-        .imagen-ecosistema-3{
-            background-image: url(../img/Ecosistemas/Tundra.jpeg);
-            &:hover{
-                background-size: 110%;
-            }
-        }
-        .imagen-ecosistema-4{
-            background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
-            &:hover{
-                background-size: 110%;
-            }
-        }
         @for $i from 1 through 4{
             .imagen-ecosistema-#{$i}{
                 height: 200px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
+                transition: transform 1s;
+            }
+        }
+        .imagen-ecosistema-1{
+            background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
+            background-color: yellowgreen;
+            &:hover{
+                z-index:0;
+                transform: scale(1.1);
+            }
+        }
+        .imagen-ecosistema-2{
+            background-image: url(../img/Ecosistemas/Desierto.jpg);
+            &:hover{
+                z-index:0;
+                transform: scale(1.1);
+                transition: transform 1s;
+            }
+        }
+        .imagen-ecosistema-3{
+            background-image: url(../img/Ecosistemas/Tundra.jpeg);
+            &:hover{
+                z-index:0;
+                transform: scale(1.1);
+                transition: transform 1s;
+            }
+        }
+        .imagen-ecosistema-4{
+            background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
+            &:hover{
+                z-index:0;
+                transform: scale(1.1);
+                transition: transform 1s;
             }
         }
         .descripcion{
@@ -58,6 +66,7 @@
             p{
                 padding: 10px 0px 10px 0px;
             }
+            z-index:1;
         }
     }
 }

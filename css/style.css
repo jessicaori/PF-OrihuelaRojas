@@ -52,6 +52,9 @@
 .navbar-nav a:hover {
   color: rgb(65, 105, 249);
 }
+.navbar-nav a:active {
+  color: aquamarine;
+}
 
 .navbar-toggler {
   display: none;
@@ -152,59 +155,71 @@ section {
   flex-direction: column;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-1 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 1s;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-2 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 1s;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-3 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 1s;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-4 {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 1s;
+}
+#sec-ecosistemas .contenido .imagen-ecosistema-1 {
   background-image: url(../img/Ecosistemas/Selvas-Tropicales.jpg);
   background-color: yellowgreen;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-1:hover {
-  background-size: 105%;
+  z-index: 0;
+  transform: scale(1.1);
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-2 {
   background-image: url(../img/Ecosistemas/Desierto.jpg);
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-2:hover {
-  background-size: 120%;
+  z-index: 0;
+  transform: scale(1.1);
+  transition: transform 1s;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-3 {
   background-image: url(../img/Ecosistemas/Tundra.jpeg);
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-3:hover {
-  background-size: 110%;
+  z-index: 0;
+  transform: scale(1.1);
+  transition: transform 1s;
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-4 {
   background-image: url(../img/Ecosistemas/Bosques-templados.jpg);
 }
 #sec-ecosistemas .contenido .imagen-ecosistema-4:hover {
-  background-size: 110%;
-}
-#sec-ecosistemas .contenido .imagen-ecosistema-1 {
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#sec-ecosistemas .contenido .imagen-ecosistema-2 {
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#sec-ecosistemas .contenido .imagen-ecosistema-3 {
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#sec-ecosistemas .contenido .imagen-ecosistema-4 {
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  z-index: 0;
+  transform: scale(1.1);
+  transition: transform 1s;
 }
 #sec-ecosistemas .contenido .descripcion {
   background-color: rgb(34, 33, 33);
   display: block;
   height: fit-content;
   padding: 15px;
+  z-index: 1;
 }
 #sec-ecosistemas .contenido .descripcion p {
   padding: 10px 0px 10px 0px;
@@ -228,21 +243,48 @@ section {
   grid-template-rows: 1fr 1fr 0.6fr;
   grid-template-areas: "atlantico pacifico imagen" "indico artico imagen" "antartico antartico imagen";
   gap: 10px;
+  overflow-y: hidden;
 }
 #sec-oceanos .contenido .grid-container #atlantico {
   grid-area: atlantico;
 }
+#sec-oceanos .contenido .grid-container #atlantico:hover {
+  transform: rotate(-2deg);
+  background-image: linear-gradient(to top, rgba(0, 255, 187, 0.895), rgb(80, 133, 183), rgb(24, 64, 145));
+  transition: transform 0.5s;
+}
 #sec-oceanos .contenido .grid-container #pacifico {
   grid-area: pacifico;
+}
+#sec-oceanos .contenido .grid-container #pacifico:hover {
+  transform: rotate(2deg);
+  background-image: linear-gradient(to top, rgba(0, 255, 187, 0.895), rgb(80, 133, 183), rgb(24, 64, 145));
+  transition: transform 0.5s;
 }
 #sec-oceanos .contenido .grid-container #indico {
   grid-area: indico;
 }
+#sec-oceanos .contenido .grid-container #indico:hover {
+  transform: rotate(-2deg);
+  background-image: linear-gradient(to top, rgba(0, 255, 187, 0.895), rgb(80, 133, 183), rgb(24, 64, 145));
+  transition: transform 0.5s;
+}
 #sec-oceanos .contenido .grid-container #artico {
   grid-area: artico;
 }
+#sec-oceanos .contenido .grid-container #artico:hover {
+  transform: rotate(2deg);
+  background-image: linear-gradient(to top, rgba(0, 255, 187, 0.895), rgb(80, 133, 183), rgb(24, 64, 145));
+  transition: transform 0.5s;
+}
 #sec-oceanos .contenido .grid-container #antartico {
   grid-area: antartico;
+  overflow-y: hidden;
+}
+#sec-oceanos .contenido .grid-container #antartico:hover {
+  transform: rotate(-0.5deg);
+  background-image: linear-gradient(to top, rgba(0, 255, 187, 0.895), rgb(80, 133, 183), rgb(24, 64, 145));
+  transition: transform 0.5s;
 }
 #sec-oceanos .contenido .grid-container #imagen-oceanos {
   grid-area: imagen;
@@ -257,9 +299,6 @@ section {
 }
 #sec-oceanos .contenido .grid-container .descripcion p {
   padding: 10px 0px 10px 0px;
-}
-#sec-oceanos .contenido .grid-container .descripcion:hover {
-  background-color: rgb(80, 133, 183);
 }
 
 /* EXPLORACION ESPACIAL */
@@ -342,7 +381,8 @@ section {
 #sec-cambio .contenido h1 {
   background-color: rgb(34, 34, 34);
   width: fit-content;
-  padding: 10px;
+  padding: 10px 30px;
+  border-radius: 60px;
 }
 #sec-cambio .contenido .grid-container {
   display: grid;
@@ -356,7 +396,9 @@ section {
 #sec-cambio .contenido .grid-container h3 {
   background-color: rgb(34, 34, 34);
   width: fit-content;
-  padding: 10px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: all 0.2s;
 }
 #sec-cambio .contenido .grid-container h3:hover {
   background-color: rgb(80, 47, 3);
@@ -428,11 +470,13 @@ section {
   padding: 5px 20px;
 }
 #sec-contacto .contenido form .boton .boton-volver:hover, #sec-contacto .contenido form .boton .boton-enviar:hover {
-  background-color: white;
-  color: rgb(23, 23, 23);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(24, 64, 145));
 }
 #sec-contacto .contenido form .boton .boton-enviar {
   background-color: rgb(40, 126, 40);
+}
+#sec-contacto .contenido form .boton .boton-enviar:hover {
+  background-image: linear-gradient(to right, rgb(40, 126, 40), rgb(24, 64, 145));
 }
 #sec-contacto .contenido form a {
   text-decoration: none;
@@ -441,6 +485,11 @@ section {
   color: black;
   padding: 5px 10px;
   margin-top: 5px;
+  border-radius: 25px;
+  transition: background-color 0.5s;
+}
+#sec-contacto .contenido form input:focus {
+  background-color: rgb(169, 242, 202);
 }
 
 /* FOOTER */
