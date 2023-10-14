@@ -406,6 +406,7 @@ section {
 #sec-cambio .contenido .grid-container h3:hover {
   background-color: rgb(80, 47, 3);
   transform: scale(1.1);
+  border: #fff solid 1px;
 }
 
 /* CONTACTANOS */
@@ -485,6 +486,7 @@ section {
   text-decoration: none;
 }
 #sec-contacto .contenido form input {
+  width: 96%;
   color: black;
   padding: 5px 10px;
   margin-top: 5px;
@@ -557,6 +559,9 @@ footer #derechos-reservados p {
   h1 {
     font-size: 50px;
   }
+  h3 {
+    font-size: 30px;
+  }
   h4 {
     font-size: 20px;
   }
@@ -567,27 +572,89 @@ footer #derechos-reservados p {
   #sec-ecosistemas .contenido {
     width: 90%;
   }
-  #sec-ecosistemas .grid-container {
+  #sec-ecosistemas .contenido .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
-    column-gap: 20px;
-    padding-bottom: 60px;
-  }
-  #sec-oceanos .grid-container {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "atlantico imagen" "pacifico imagen" "indico imagen" "artico imagen" "antartico imagen";
+    gap: 20px;
+    padding-bottom: 0px;
   }
   #sec-oceanos .contenido {
     width: 90%;
+    padding-bottom: 0px;
   }
-  footer .grid-container h3 {
+  #sec-oceanos .contenido .grid-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "imagen imagen" "atlantico pacifico" "indico artico" "antartico antartico";
+  }
+  #sec-oceanos .contenido .grid-container h3 {
     font-size: 20px;
+  }
+  #sec-oceanos .contenido .grid-container #antartico {
+    height: fit-content;
+  }
+  #sec-cambio .contenido {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #sec-cambio .contenido h1 {
+    border-radius: 45px;
+    text-align: center;
+  }
+  #sec-cambio .contenido .grid-container {
+    padding-top: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  #sec-cambio .contenido .grid-container h3 {
+    font-size: 20px;
+    justify-self: left;
+  }
+  #sec-cambio .contenido .grid-container h3:hover {
+    translate: 40px;
+  }
+  #sec-exploracion .contenido {
+    width: 90%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  #sec-exploracion .contenido .flex-container {
+    gap: 5px;
+  }
+  #sec-exploracion .contenido .flex-container .grid-container {
+    padding-top: 5px;
+  }
+  #sec-exploracion .contenido h3 {
+    font-size: 20px;
+  }
+  #sec-contacto .contenido {
+    width: 90%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  #sec-contacto .contenido form {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+  }
+  #sec-contacto .contenido form input {
+    width: 96%;
+  }
+  #sec-contacto .contenido form .boton {
+    justify-content: center;
   }
   footer .grid-container {
     grid-template-areas: "informacion informacion" "propiedad social-media";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
   }
   #informacion {
     grid-area: informacion;
@@ -605,6 +672,9 @@ footer #derechos-reservados p {
   }
   h1 {
     font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
   }
   h4 {
     font-size: 20px;
@@ -625,28 +695,69 @@ footer #derechos-reservados p {
   #sec-ecosistemas .contenido {
     width: 90%;
   }
-  #sec-ecosistemas .grid-container {
+  #sec-ecosistemas .contenido .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    column-gap: 20px;
-    padding-bottom: 60px;
   }
   #sec-oceanos .contenido {
     width: 90%;
+    padding-bottom: 30px;
   }
-  #sec-oceanos .grid-container {
+  #sec-oceanos .contenido .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 250px auto;
     grid-template-areas: "imagen" "atlantico" "pacifico" "indico" "artico" "antartico";
   }
-  footer .grid-container h3 {
+  #sec-cambio .contenido .grid-container h3:hover {
+    translate: 0px;
+    transform: scale(1);
+  }
+  #sec-exploracion .video-de-fondo {
+    position: fixed;
+  }
+  #sec-exploracion .contenido .flex-container {
+    gap: 10px;
+  }
+  #sec-exploracion .contenido .flex-container .grid-container {
+    padding-top: 5px;
+    grid-template-areas: "encabezado encabezado" "enlace1 enlace2";
+  }
+  #sec-exploracion .contenido h3 {
     font-size: 20px;
+  }
+  #sec-contacto .video-de-fondo {
+    position: fixed;
+  }
+  #sec-contacto .contenido {
+    width: 90%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  #sec-contacto .contenido form {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "nom" "ape" "email" "tel" "texto" "boton";
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
+    align-items: end;
+  }
+  #sec-contacto .contenido form input {
+    width: 96%;
+  }
+  #sec-contacto .contenido form .boton {
+    justify-content: center;
   }
   footer .grid-container {
     padding: 30px 20px;
     grid-template-areas: "informacion" "propiedad" "social-media";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+  footer .grid-container h3 {
+    font-size: 20px;
   }
 }
 
